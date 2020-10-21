@@ -1,0 +1,49 @@
+#main-container {
+    border: 1px solid red;
+}
+
+ul{
+    margin-left: 250px;
+}
+
+li{
+    display: inline;
+    float: right;
+    border: 1px solid orange;
+    margin-right: 35px;
+    border-radius: 10px;
+    background-color: grey;
+    margin-top: 15px;
+
+}
+
+a{
+    text-decoration: none;
+    margin: 25px;
+    font-size: 25px;
+    font-weight: 600;
+    color: greenyellow;
+    
+}
+
+h2 {
+    display: inline-block;
+    border: 1px solid orange;
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
+nav {
+    display: inline-block;
+    
+}
+
+header{
+    background-color: indigo;
+}
+
+.red {
+    color: red;
+    font-weight: 900;
+}
