@@ -1,5 +1,9 @@
+body {
+    background-color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 #main-container {
-    border: 1px solid red;
+    
 }
 
 ul{
@@ -12,7 +16,7 @@ li{
     border: 1px solid orange;
     margin-right: 35px;
     border-radius: 10px;
-    background-color: grey;
+    background-color: yellow;
     margin-top: 15px;
 
 }
@@ -22,15 +26,14 @@ a{
     margin: 25px;
     font-size: 25px;
     font-weight: 600;
-    color: greenyellow;
+    color: black;
     
 }
 
-h2 {
+.header {
     display: inline-block;
-    border: 1px solid orange;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: indigo;
     padding: 5px;
 }
 
@@ -41,9 +44,105 @@ nav {
 
 header{
     background-color: indigo;
+    border-bottom: 2px solid black;
 }
 
 .red {
     color: red;
     font-weight: 900;
 }
+/*******Notícias*****/
+
+main{
+    width: 55%;
+}
+
+.main-article{
+    margin-left: 250px;
+    text-align: justify;
+    color: chartreuse;
+    font-weight: 700;
+    float: left;
+}
+
+.cientific {
+    margin-left: 200px;
+}
+
+.cientific td {
+    width: 350px;
+}
+
+.cientific h3 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.img-sec{
+    width: 150px;
+    border-radius: 100%;
+}
+
+.curiosidades{
+    display: inline-block;
+    border: 2px solid yellow;
+    width: 18.3%;
+    float: right;
+    margin: 60px;
+    padding: 10px;
+}
+
+.curiosidades h3 {
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.main-article h2 {
+    color: orange;
+    font-size: 36px;
+}
+
+.referencia{
+   color: yellow;
+   font-weight: 700;
+   font-size: 20px;
+}
+
+.video {
+    float: right;
+    border: 2px solid white;
+    margin-right: 100px;
+    margin-top: 110px;
+    padding: 20px;
+    width: 350px;
+}
+
+.video h2 {
+    color: red;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.video a{
+    color: white;
+}
+
+.aside-pic {
+    width: 300px;
+    border: 3px solid yellow;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+table{
+    color: whitesmoke;
+    border-color: tomato;
+}
+
