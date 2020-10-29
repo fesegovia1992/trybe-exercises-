@@ -7,13 +7,20 @@ let info = {
 
 
 let info2 = {
+    personagem: "Tio Patinhas",
+    origem: " e Christmas on Bear Mountain, Dell's Four Comics #178",
+    nota: " e O último MacPatinhas",
+    recorrente: "Sim"
+};
 
+for (let key in info) {
+
+    console.log(info[key] + ' ' + info2[key]);
+    if (info.recorrente[key] == info2.recorrente[key]) {
+        info['recorrente'] = 'Ambos recorrentes';
+    }
+    else {
+        console.log('Não recorrentes');
+    }
 }
 
-info2['personagens:'] = "Margarida e Tio Patinhas";
-info2['origem:'] = "Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178";
-info2['nota:'] = "Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas";
-info2['recorrentes:'] = "Sim";
-
-
-console.log(info2);
