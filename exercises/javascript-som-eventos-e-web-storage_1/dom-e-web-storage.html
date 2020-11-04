@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .xablau {
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+  <body>
+    <h2 id="page-title">Título</h2>
+    <p class ="xablau" id="paragraph">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p  class="xablau" id="second-paragraph">Segundo parágrafo!</p>
+
+    <script>
+      var paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+
+      var title = document.getElementById('page-title').innerText = 'Harry Potter e o Cálice de Fogo';
+        
+      var paragraph2 = document.getElementById('second-paragraph');
+      paragraph2.style.backgroundColor = "green";
+
+      var subtitle = document.getElementById('subtitle').innerText = 'As marmorras dos Gigantes';
+
+       document.getElementsByClassName('xablau')[0].style.color ="yellow";
+    </script>
+
+  </body>
+</html>
