@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+        /*
+        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+        - document.getElementById()
+        - document.getElementsByClassName()
+        - document.getElementsByTagName()
+ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        */
+          //Ex 1
+        function changeText (text) {
+                let newText = document.getElementsByTagName('p')[1].innerText = "Daqui a 2 anos eu quero estar em uma boa empresa";
+                  newText = text;      
+        };
+          changeText();
+
+          //Ex 2
+        function changeColor (color) {
+                let newColor = document.getElementsByClassName('main-content')[0].style.backgroundColor = "rgb(76,164,109)";
+                newColor = color;
+        };
+          changeColor();
+
+          //Ex 3
+        function changeToWhite (branco) {
+                let changeWhite = document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
+                changeToWhite = branco;
+        };
+        changeToWhite();
+
+        //Ex 4
+        function correction (certo){
+                let newText = document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - Javascript";
+                newText = certo;
+        };
+        correction();
+
+        //Ex 5
+        function changeToUppercase (maiuscula){
+                let uppercaseLetter = document.getElementsByTagName('p');
+                for (let index = 0; index < uppercaseLetter.length; index +=1) {
+                  maiuscula = uppercaseLetter[index].style.textTransform = "uppercase";   
+                }
+                
+        };
+        changeToUppercase();
+
+        //Ex 6
+        function showContent (){
+                let show = document.getElementsByTagName('p');
+                for (let index = 0; index < show.length; index +=1) {
+                  show[index].innerHTML;
+                }
+              
+        };
+        console.log(show);
+    </script>
+  </body>
+</html>
