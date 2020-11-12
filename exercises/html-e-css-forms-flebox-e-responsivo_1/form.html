@@ -13,8 +13,42 @@
 
     <fieldset>
         <label for="name-complete"> Name: 
-            <input type="text" maxlength="40" name="name" value="" id="name-complete" required>
+            <input type="text" maxlength="40" name="name" value="" id="name-complete" required placeholder="Type your complete name">
         </label>
+
+        <label for="user-email"> E-mail:
+            <input type="email" maxlength="50" name="email" value="" id="user-email" required placeholder="Type your address e-mail">
+        </label>
+
+        <label for="user-cpf"> CPF:
+            <input type="number" maxlength="11" name="cpf" value="" id="user-cpf" required placeholder="Type your CPF">
+        </label>
+
+        <label for="user-adress"> Adress: 
+            <input type="text" maxlength="200" name="adress" value="" id="user-adress" required placeholder="Type your complete adress">
+        </label>
+
+        <label for="user-city"> City:
+            <input type="text" maxlength="28" name="city" value="" id="user-city" required placeholder="Type your city">
+        </label>
+
+        <label for="input-state"> State where you live: 
+            <select name="dropdown-state" id="input-state" required>
+
+            </select>
+        </label>
+
+        <label for="radio-home-1"> Choose one:
+            <input type="radio" id="radio-home-1" value="home" required name="radio-house">Apartment           
+        </label>
+
+        <label for="radio-home-2">
+            <input type="radio" id="radio-home-2" value="home" required name="radio-house">House
+        </label>
+    </fieldset>
+
+    <fieldset>
+        
     </fieldset>
     <script src="script.js"></script>
 </body>
