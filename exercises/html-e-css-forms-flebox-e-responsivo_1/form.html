@@ -10,45 +10,97 @@
     <header>
         <h1>Formulário de Cadastro - Currículo</h1>
     </header>
+    <main id="principal">
+    <form action="" method="GET" id="job-form">
 
-    <fieldset>
-        <label for="name-complete"> Name: 
-            <input type="text" maxlength="40" name="name" value="" id="name-complete" required placeholder="Type your complete name">
+    <fieldset id="fieldOne">
+        <div class="line-content">
+        <label for="name-complete"> Name: <br>
+            <input type="text" maxlength="40" name="name" value="" id="name-complete" required placeholder="Type your full name">
         </label>
+        </div>
 
-        <label for="user-email"> E-mail:
+        <div class="line-content">
+        <label for="user-email"> E-mail:<br>
             <input type="email" maxlength="50" name="email" value="" id="user-email" required placeholder="Type your address e-mail">
         </label>
+        </div>
 
-        <label for="user-cpf"> CPF:
-            <input type="number" maxlength="11" name="cpf" value="" id="user-cpf" required placeholder="Type your CPF">
+        <div class="line-content">
+        <label for="user-cpf"> CPF:<br>
+            <input type="number"  onKeyDown="if(this.value.length ==11) return false;" name="cpf" value="" id="user-cpf" required placeholder="Type your CPF">
         </label>
+        </div>
 
-        <label for="user-adress"> Adress: 
-            <input type="text" maxlength="200" name="adress" value="" id="user-adress" required placeholder="Type your complete adress">
+        <div class="line-content">
+        <label for="user-adress"> Adress: <br>
+            <input type="text" maxlength="200" name="adress" value="" id="user-adress" required placeholder="Type your full adress">
         </label>
+        </div>
 
-        <label for="user-city"> City:
+        <div class="line-content">
+        <label for="user-city"> City:<br>
             <input type="text" maxlength="28" name="city" value="" id="user-city" required placeholder="Type your city">
         </label>
+        </div>
 
-        <label for="input-state"> State where you live: 
+        <div class="line-content">
+        <label for="input-state"> State where you live: <br>
             <select name="dropdown-state" id="input-state" required>
 
             </select>
         </label>
-
-        <label for="radio-home-1"> Choose one:
+        </div>
+        <div class="line-content">
+        <div>
+        <label for="radio-home-1"> Choose One:
             <input type="radio" id="radio-home-1" value="home" required name="radio-house">Apartment           
         </label>
-
+        </div>
+        <div>
         <label for="radio-home-2">
             <input type="radio" id="radio-home-2" value="home" required name="radio-house">House
         </label>
+        </div>
+        </div>
     </fieldset>
 
-    <fieldset>
+    <fieldset id="fieldTwo">
+        <div class="resume-job">
+        <p>Resume Your Past Jobs</p>
+        <textarea name="past-jobs" id="past-jobs" required cols="30" rows="10" maxlength="1000" placeholder="Write your past jobs experiences here"></textarea>
+        </div>
         
+        <div class="line-content">
+        <label for="user-position"> Position:
+            <input type="text" name="position" id="user-position" required maxlength="40" placeholder="Type your position">
+        </label>
+        </div>
+
+        <div class="line-content">
+        <label for="user-position-description"> Job Description:
+            <input type="text" name="position-description" id="user-position-description" required maxlength="500" placeholder="Write your position description here"><br>
+        </label>
+        </div>
+
+        <div class="line-content">
+        <label for="job-date"> Date:
+            <input type="date" id="job-date" name="date" required>
+        </label>
+        </div>
+
+        <div class="btns" class="line-content"><br>
+            <button>Submit</button>
+        </div>
+
+        <div  class="btns" class="line-content">
+            <button type="reset">Limpar Formulário</button>
+        </div>
+        
+
+    </main>
+
+        </form>
     </fieldset>
     <script src="script.js"></script>
 </body>
