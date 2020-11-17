@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro - Currículo</title>
+    <link rel="stylesheet" href="/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+</head>
+<body>
+    <div class="container-md">
+    <header>
+        <h1>Formulário de Cadastro - Currículo</h1>
+    </header>
+    <main id="principal">
+    <form action="" method="GET" id="job-form">
+
+    <fieldset id="fieldOne">
+        <div class="form-group" class="line-content">
+        <label for="name-complete"> Name: <br>
+            <input class="rounded" type="text" maxlength="40" name="name" value="" id="name-complete" required placeholder="Type your full name">
+        </label>
+        </div>
+
+        <div class="form-group" class="form-group">
+        <label for="user-email"> E-mail:<br>
+            <input class="rounded" type="email" maxlength="50" name="email" value="" id="user-email" required placeholder="Type your address e-mail">
+        </label>
+        </div>
+
+        <div class="line-content" class="form-group">
+        <label for="user-cpf"> CPF:<br>
+            <input class="rounded" type="number"  onKeyDown="if(this.value.length ==11) return false;" name="cpf" value="" id="user-cpf" required placeholder="Type your CPF">
+        </label>
+        </div>
+
+        <div class="line-content" class="form-group">
+        <label for="user-adress"> Adress: <br>
+            <input class="rounded" type="text" maxlength="200" name="adress" value="" id="user-adress" required placeholder="Type your full adress">
+        </label>
+        </div>
+
+        <div class="line-content" class="form-group"> 
+        <label for="user-city"> City:<br>
+            <input class="rounded" type="text" maxlength="28" name="city" value="" id="user-city" required placeholder="Type your city">
+        </label>
+        </div>
+
+        <div class= "btn btn-secondary">
+        <label for="input-state"> State where you live: <br>
+            <select name="dropdown-state" id="input-state" required>
+
+                <option value="estado">Selecione o Estado</option> 
+                <option value="ac">Acre</option> 
+                <option value="al">Alagoas</option> 
+                <option value="am">Amazonas</option> 
+                <option value="ap">Amapá</option> 
+                <option value="ba">Bahia</option> 
+                <option value="ce">Ceará</option> 
+                <option value="df">Distrito Federal</option> 
+                <option value="es">Espírito Santo</option> 
+                <option value="go">Goiás</option> 
+                <option value="ma">Maranhão</option> 
+                <option value="mt">Mato Grosso</option> 
+                <option value="ms">Mato Grosso do Sul</option> 
+                <option value="mg">Minas Gerais</option> 
+                <option value="pa">Pará</option> 
+                <option value="pb">Paraíba</option> 
+                <option value="pr">Paraná</option> 
+                <option value="pe">Pernambuco</option> 
+                <option value="pi">Piauí</option> 
+                <option value="rj">Rio de Janeiro</option> 
+                <option value="rn">Rio Grande do Norte</option> 
+                <option value="ro">Rondônia</option> 
+                <option value="rs">Rio Grande do Sul</option> 
+                <option value="rr">Roraima</option> 
+                <option value="sc">Santa Catarina</option> 
+                <option value="se">Sergipe</option> 
+                <option selected value="sp">São Paulo</option> 
+                <option value="to">Tocantins</option>
+
+            </select>
+        </label>
+        </div>
+        <div class="line-content" class="form-group">
+        <div class="form-check form-check-inline">
+        <label class="form-check-label" for="radio-home-1"> Choose One:
+            <input class="form-check-input" type="radio" id="radio-home-1" value="home" required name="radio-house">Apartment           
+        </label>
+        </div>
+        <div class="form-check form-check-inline">
+        <label class="form-check-label" for="radio-home-2">
+            <input class="form-check-input" type="radio" id="radio-home-2" value="home" required name="radio-house">House
+        </label>
+        </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="container-md">
+        <div class="form-group">
+        <h4>Resume Your Past Jobs</h4>
+        <textarea class="form-control" name="past-jobs" id="past-jobs" required cols="30" rows="10" maxlength="1000" placeholder="Write your past jobs experiences here"></textarea>
+        </div>
+        
+        <div class="form-group">
+        <label for="user-position"> Position:
+            <input type="text" name="position" id="user-position" required maxlength="40" placeholder="Type your position">
+        </label>
+        </div>
+
+        <div class="line-content" class="form-group">
+        <label for="user-position-description"> Job Description:
+            <input type="text" name="position-description" id="user-position-description" required maxlength="500" placeholder="Write your position description here"><br>
+        </label>
+        </div>
+
+        <div class="form-group" class="form-group">
+        <label for="datepicker"> Date:
+            <input type="date" id="datepicker" name="date" required>
+        </label>
+        </div>
+
+        <div class="btn-group" class="form-group"><br>
+            <button>Submit</button>
+        </div>
+
+        <div  class="btn-group" class="form-group">
+            <button type="reset">Limpar Formulário</button>
+        </div>
+        
+
+    </main>
+
+        </form>
+    </fieldset>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js">
+    
+    </script>
+</body>
+</html>
