@@ -125,3 +125,71 @@ h3 {
     padding: 0 10px;
   }
 }
+
+@media screen and (max-width: 375px) {
+  body {
+    background-color: honeydew;
+  }
+  
+  nav {
+    display: none;
+  }
+
+  header p {
+    font-size: 23px;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .aside-one {
+    margin-top: 0px;
+    background-color: khaki;
+    margin-left: 0px;
+    border: 2px solid khaki;
+  }
+
+  .aside-one ul li {
+    font-size: 16px;
+    list-style: none;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .main-content {
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .main-content p {
+    font-size: 17px;
+    margin: 0 7px;
+  }
+
+  footer p:last-child {
+    display: none;
+  }
+
+  footer {
+    height: 100px;
+  }
+
+  footer p {
+    font-size: 15px;
+  }
+}
