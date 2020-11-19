@@ -110,3 +110,18 @@ footer {
 h3 {
   padding-top: 10px;
 }
+
+@media screen and (max-width: 800px) {
+  .aside-two h2 {
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  footer p:last-child {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+}
