@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: honeydew;
+}
+
+header {
+  width: 100%;
+  background-color: darkorange;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid green;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-right: 10px;
+  font-size: 20px;
+  border: 2px solid black;
+  padding: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+header p {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.list {
+  width: 18%;
+  
+}
+
+.main-content {
+  width: 60%;
+  margin-right: 50px;
+  text-align: justify;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.aside-two {
+  background-color: green;
+  padding: 5px 0;
+}
+
+.aside-two li {
+  color: white;
+  font-size: 17px;
+  margin-right: 10px;
+  font-weight: 900;
+  margin-bottom: 7px;
+}
+
+.aside-two h2 {
+  color: orange;
+}
+
+.aside-one li {
+  font-size: 17px;
+  margin-right: 10px;
+  font-weight: 900;
+  margin-bottom: 7px;
+}
+
+.aside-one {
+  border: 2px solid black;
+  margin-top: 45px;
+  background-color: orange;
+}
+
+.aside-one h2 {
+  color: green;
+}
+
+.main-content p {
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  background-color: goldenrod;
+  height: 130px;
+}
+
+h3 {
+  padding-top: 10px;
+}
