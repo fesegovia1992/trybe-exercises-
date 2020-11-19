@@ -58,3 +58,32 @@ figure {
       display: flex;     
   }
 }
+
+@media screen and (min-width: 1300px) {
+    body {
+        max-width: 1100px;
+        margin: 0 auto;
+        background-color: darkgray;
+        border: 1px solid red;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    body p {
+        font-size: 20px;
+        text-align: justify;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .flex {
+        display: flex;
+    }
+    img {
+        width: 520px;
+    }
+    figcaption {
+        text-align: center;
+    }
+
+}
