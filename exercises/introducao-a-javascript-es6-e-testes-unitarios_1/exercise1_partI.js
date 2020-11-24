@@ -21,3 +21,12 @@ const testingScope = (escopo) => {
     });
   
   console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
+
+  //Ex 2 parte I
+  const fatorial = n => {
+    if (n > 1) {
+        return n * fatorial(n - 1)
+    }
+    return n
+}
+  console.log(fatorial(4));
