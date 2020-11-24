@@ -30,3 +30,21 @@ const testingScope = (escopo) => {
     return n
 }
   console.log(fatorial(4));
+
+  //Ex 2 parte II
+  function findLongestWord(str) {
+    var longest = str.split(' ').reduce((longestWord, currentWord) =>{
+      return currentWord.length > longestWord.length ? currentWord : longestWord;
+    }, "");
+    return longest;
+  }
+  console.log(findLongestWord("Antônio foi no banheiro e não sabemos o que aconteceu"));
+
+  //Ex 2 parte III
+  const btn = document.getElementById('btn-clique');
+  let click = document.getElementById('cliques');
+  let count = 0;
+
+  btn.addEventListener('click', () => click.innerHTML = count += 1)
+
+  
