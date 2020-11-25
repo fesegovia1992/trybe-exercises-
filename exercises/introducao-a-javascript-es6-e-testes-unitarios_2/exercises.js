@@ -122,21 +122,24 @@ const order = {
     },
   };
   
-  const customerInfo = (order) => {
-    // Adicione abaixo as informações necessárias.
-    console.log(`Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, ${order.address.street}, número ${order.address.number}, AP: ${order.address.apartment}`);
-  }
+  // const customerInfo = (order) => {
+  //   // Adicione abaixo as informações necessárias.
+  //   console.log(`Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone: ${order.phoneNumber}, ${order.address.street}, número ${order.address.number}, AP: ${order.address.apartment}`);
+  // }
   
   
-  customerInfo(order);
+  // customerInfo(order);
   
   const orderModifier = (order) => {
     // Adicione abaixo as informações necessárias.
     order.order.pizza = {};
     order.order.pizza.calabresa = {amount: 1, price: 20};
     order.order.pizza.muzzarella = {amount: 1, price: 20};
+    const sabores = Object.keys(order.order.pizza);
+    const coca = order.order.drinks.coke.type;
+    const drinkPrice = order.order.drinks.coke.price;
     order.name = 'Luiz Silva';
-    console.log(`Olá ${order.name}, o total do seu pedido de ${order.order.pizza}, ${order.order.pizza.calabresa} e ${order.order.drinks.coke.type} é R$${order.order.pizza.calabresa.price + order.order.pizza.muzzarella.price + order.order.drinks.coke.price}`);
+    console.log(`Olá ${order.name}, o total do seu pedido de ${sabores} e ${coca} é R$${order.order.pizza.calabresa.price + order.order.pizza.muzzarella.price + drinkPrice}`);
 }
   
   orderModifier(order);
@@ -196,7 +199,12 @@ const order = {
   console.log(allLessons);
   
   //Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
-  const totalStudents = (obj) => Object.entries(obj);
+  const totalStudents = (obj) => {
+    for (let i in allLessons) {
+      obj = Object.values(obj[i]).numeroEstudantes;
+    }
+  }
   
-  console.log(totalStudents(allLessons))
+  console.log(totalStudents(allLessons));
+
   
