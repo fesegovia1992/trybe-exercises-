@@ -53,6 +53,24 @@ test('Testa invertendo todas as funções, exceto a ultima que adiciona mais um 
     expect(service.concatStr).toHaveBeenCalledTimes(1);
 });
 
+describe('Ex 5 - teste', () => {
+test('Testa a implementação da primeira função novamente e sem seguida, a restauração da mesma', () => {
+    service.upperString = jest.spyOn(service, 'upperString').mockImplementation(str => str.toLowerCase());
+
+    expect(service.upperString('TRYBE')).toBe('trybe');
+    expect(service.upperString).toHaveBeenCalled();
+    expect(service.upperString).toHaveBeenCalledTimes(1);
+    expect(service.upperString).toHaveBeenCalledWith('TRYBE');
+
+    service.upperString.mockRestore();
+
+    expect(service.upperString('trybe')).toBe('TRYBE');
+    expect(service.upperString).toHaveBeenCalled();
+    expect(service.upperString).toHaveBeenCalledTimes(1);
+    expect(service.upperString).toHaveBeenCalledWith('trybe');
+});
+});
+
 // exports.randomRGBColor = function() {
 //     const r = Math.floor(Math.random() * 256);
 //     const g = Math.floor(Math.random() * 256);
